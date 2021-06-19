@@ -1,0 +1,57 @@
+.header {
+    color: white;
+    font-size: 5rem;
+    margin-top: 0rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.country {
+    width: 10rem;
+    height: 14rem;
+    background-color: #313131;
+    color: white;
+    border: 3px solid #242b91;
+    margin: 1rem;
+    padding: 0;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;    
+}
+
+.country :link{
+    text-decoration: none;
+}
+
+.country p {
+    color: white;
+    max-width: 10rem;
+    max-height: 7rem;
+    font-size: 1rem;
+}
+
+.country img {
+    width: 10rem;
+    height: 7rem;
+}
+
+.card {
+    margin: 1rem;
+    padding: 5.5rem;
+    border-radius: 6px;
+    background-color: black;
+    align-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.search {
+    width: 100%;
+    margin-bottom: 5rem;
+    text-align: center;
+}

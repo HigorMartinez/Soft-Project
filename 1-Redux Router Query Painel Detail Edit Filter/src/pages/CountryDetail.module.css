@@ -1,0 +1,58 @@
+.country {
+    margin-left: 0%;
+    grid-area: main;
+    align-self: start;
+    justify-self: end;
+}
+
+.country img {
+    width: 10rem;
+    height: 7rem;
+}
+
+.country h1 {
+    color: white;
+    align-self: start;
+}
+
+.country p {
+    color: white;
+    max-width: 10rem;
+    max-height: 7rem;
+    font-size: 1rem;
+}
+
+.card {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". header ."
+    "main . form";
+    left: 0;
+    right: 0;
+    height: 96vh;
+    margin: 1rem;
+    border-radius: 6px;
+    background-color: black;
+}
+
+.card h1 {
+    color: white;
+    grid-area: header;
+}
+
+.form {
+    width: 5rem;
+    color: white;
+    grid-area: form;
+    align-self: start;
+    justify-self: start;
+}
+
+
+
+
+
