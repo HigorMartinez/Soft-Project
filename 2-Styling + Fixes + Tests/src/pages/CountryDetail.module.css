@@ -1,0 +1,99 @@
+.card {
+    margin-left: 0%;
+    grid-area: main;
+    align-self: start;
+    justify-self: end;
+    width: 10rem;
+    height: 19rem;
+    background-color: #555353;
+    color: white;
+    border: 2px solid #242b91;
+    margin: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;   
+}
+
+.card img {
+    width: 10rem;
+    height: 7rem;
+}
+
+.card h1 {
+    color: white;
+    align-self: start;
+}
+
+.card p {
+    color: white;
+    max-width: 10rem;
+    max-height: 7rem;
+    font-size: 1rem;
+}
+
+.countrydetail {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". header ."
+    "main . form";
+    left: 0;
+    right: 0;
+    height: 96vh;
+    margin: 1rem;
+    border-radius: 6px;
+    background-color: black;
+}
+
+.countrydetail h1 {
+    color: white;
+    grid-area: header;
+    width: 30rem;
+    text-align: center;
+}
+
+.form {
+    margin-top: -1rem;
+    width: 9rem;
+    color: white;
+    grid-area: form;
+    align-self: start;
+    justify-self: start;
+}
+
+.form input {
+    margin-top: 1rem;
+    border-radius: 0px;
+    padding-left: 0.7rem;
+    width: 15rem;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form p {
+    margin-left: 3.5rem;
+}
+
+.form h2 {
+    margin-bottom: -0.3rem;
+    margin-left: 5rem;
+    width: 10rem;
+}
+
+.actions {
+    margin-top: 1rem;
+    margin-left: 5.2rem;
+}
+
+
+
+
+
