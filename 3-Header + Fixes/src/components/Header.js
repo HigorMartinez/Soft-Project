@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import classes from './Header.module.css';
 
 const Header = (props) => {
+  
   return (
     <header className={classes.header}>
       <Link to='/countries' >
@@ -11,7 +12,7 @@ const Header = (props) => {
       {!props.notShow && <div className={classes.search}>
         <input
           id='search'
-          type='search's
+          type='search'
           placeholder={'Search country here...'}
           value={props.enteredSearch}
           onChange={props.searchChangeHandler}
