@@ -1,0 +1,38 @@
+.header {
+  position: relative;
+  height: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #555353;
+  border: 2px solid #3f3b3b;
+  border-radius: 6px;
+  align-content: center;
+   
+}
+
+.header h1 {
+  color: white;
+}
+
+.header :link {
+  text-decoration: none;
+}
+
+.search input {
+  border-radius: 30px;
+  padding: 0.5rem;
+  padding-left: 1.7rem;
+  width: 90%;
+  max-width: 20rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.search input:focus{
+  outline: none;
+}
