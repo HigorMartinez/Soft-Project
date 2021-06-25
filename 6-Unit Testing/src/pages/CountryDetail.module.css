@@ -1,0 +1,422 @@
+.countrypanel {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: black;
+    align-content: center;
+}
+
+.countrydetail {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". title ."
+    "card . form";
+    height: auto;
+
+    padding-top: -2rem;
+    margin-top: -10rem;
+}
+
+.countrydetail h1 {
+    color: white;
+    grid-area: title;
+    width: 30rem;
+    text-align: center;
+}
+
+.card {
+    margin-left: 0%;
+    grid-area: card;
+    align-self: start;
+    justify-self: end;
+    width: 10rem;
+    height: 19rem;
+    background-color: #555353;
+    color: white;
+    border: 2px solid #3f3b3b;
+    margin: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;   
+}
+
+.card img {
+    width: 10rem;
+    height: 7rem;
+}
+
+.card h1 {
+    color: white;
+    align-self: start;
+}
+
+.card p {
+    color: white;
+    max-width: 10rem;
+    max-height: 7rem;
+    font-size: 1rem;
+}
+
+.form {
+    margin-top: -1rem;
+    width: 9rem;
+    color: white;
+    grid-area: form;
+    align-self: start;
+    justify-self: start;
+    
+}
+
+.form input {
+    margin-top: 1rem;
+    border-radius: 0px;
+    padding-left: 0.7rem;
+    width: 15rem;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form p {
+    margin-left: 3.5rem;
+}
+
+.form h2 {
+    margin-bottom: -0.3rem;
+    margin-left: 5.2rem;
+    width: 10rem ;
+}
+
+.actions {
+    width: 5rem ;
+    margin-top: 1rem;
+    margin-left: 5.2rem;
+}
+
+@media (max-width: 800px ) {
+    .countrypanel {
+        width: auto;
+        height: auto;
+        position: relative;
+        padding-bottom: -10rem;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 6px;
+        background-color: black;
+        align-content: center;
+    }
+
+    .countrydetail {
+        width: auto;
+        height: auto;
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "title"
+        "card "
+        "form";
+        padding-top: -2rem;
+        margin-top: -5rem;
+    }
+    
+    .countrydetail h1 {
+        justify-self: auto;
+        color: white;
+        grid-area: title;
+        width: auto;
+
+        font-size: 2rem;
+    }
+
+    .form {
+        margin-left: 1.5rem;
+        margin-top: -5rem;
+        width: 9rem;
+        color: white;
+        grid-area: form;
+    }
+
+    .form input {
+        margin-top: 1rem;
+        border-radius: 0px;
+        padding-left: 0.7rem;
+   
+        height: 1rem;
+        font-size: 0.5rem;
+    }
+    
+    .form input:focus {
+        outline: none;
+    }
+    
+    .form h2 {
+        margin-left: 5.9rem;
+        margin-bottom: -0.3rem;
+        font-size: 1rem;
+    }
+    
+
+    .card {
+        margin-top: -3rem;
+        grid-area: card;  
+        justify-self: auto;
+        width: 5rem;
+        height: 9rem;
+        background-color: #555353;
+        color: white;
+        border: 2px solid #3f3b3b;
+        padding: 0.2rem;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;   
+    }
+    
+    .card img {
+        width: 5rem;
+        height: 3.5rem;
+    }
+    
+    .card h1 {
+        color: white;
+       
+        font-size: 1rem;
+    }
+    
+    .card p {
+        color: white;
+        max-width: 5rem;
+        max-height: 3.57rem;
+        font-size: 0.5rem;
+    }
+}
+
+@media (min-width: 600px ) {
+
+    .countrypanel {
+        width: auto;
+        height: auto;
+        min-height: 18.5rem;
+        position: relative;
+        padding-bottom: -10rem;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 6px;
+        background-color: black;
+        align-content: center;
+    }
+        
+    .countrydetail {
+        width: auto;
+        height: auto;
+        max-width: 40rem;
+        max-height: 20rem;
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 0fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "title . ."
+        "card . form";
+    }
+
+    .form {
+        height: auto;
+        margin-left: -1rem;
+        margin-top: -3rem;
+    }
+
+    .form input {
+        margin-top: 0.5rem;
+        border-radius: 0px;
+        padding-left: 0.7rem;
+        
+        height: 1rem;
+        font-size: 0.5rem;
+    }
+    
+    .form input:focus {
+        outline: none;
+    }
+    
+    .form h2 {
+        margin-left: 5.9rem;
+        margin-bottom: -0.3rem;
+        font-size: 1rem;
+    }
+    
+
+    .countrydetail h1 {
+        grid-area: title;
+        margin-top: 6rem;
+        margin-left: -2rem;
+        width: 20rem;
+        font-size: 1rem;
+        
+    }
+
+    
+    .card {
+        margin-left: -1rem;
+        margin-top: 0rem;
+        grid-area: card;  
+       
+        width: 5rem;
+        height: 9rem;
+        background-color: #555353;
+        color: white;
+        border: 2px solid #3f3b3b;
+        padding: 0.2rem;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;   
+    }
+    
+    .card img {
+        width: 5rem;
+        height: 3.5rem;
+    }
+    
+    .card h1 {
+        color: white;
+       
+        font-size: 1rem;
+    }
+    
+    .card p {
+        color: white;
+        max-width: 5rem;
+        max-height: 3.57rem;
+        font-size: 0.5rem;
+    }
+}
+
+
+@media all and (max-width: 1360px ) and (min-width: 800px ) {
+    .card {
+        margin-left: 12rem;
+    }
+}
+
+@media (min-width: 1360px ) {
+    .card {
+        margin-left: 16rem;        
+    }
+}
+
+@media (min-width: 800px ) {
+        
+    .countrypanel {
+        width: auto;
+        height: auto;
+        min-height: 45rem;
+        min-width: 80rem;
+        position: relative;
+        padding-bottom: -10rem;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 6px;
+        background-color: black;
+        align-content: center;
+        text-align: center;
+    }
+        
+    .countrydetail {
+        width: auto;
+        height: auto;
+        min-width: 45rem;
+
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 0fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        ". title ."
+        "card . form";
+    }
+
+    .countrydetail h1 {
+        margin-top: 8rem;
+        color: white;
+        grid-area: title;
+        width: 30rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .card {
+        margin-top: 4rem;
+        grid-area: card;
+        width: 10rem;
+        height: 19rem;
+        background-color: #555353;
+        color: white;
+        border: 2px solid #3f3b3b;
+        padding: 0.5rem;
+        text-align: center;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;   
+    }
+    
+    .card img {
+        width: 10rem;
+        height: 7rem;
+    }
+    
+    .card h1 {
+        color: white;
+        align-self: start;
+    }
+    
+    .card p {
+        color: white;
+        max-width: 10rem;
+        max-height: 7rem;
+        font-size: 1rem;
+    }
+    
+    .form {
+        margin-top: 3rem;
+        width: 15rem;
+        color: white;
+        grid-area: form;
+        justify-self: start;
+        text-align: center;
+    }
+    
+    .form input {
+        margin-top: 1rem;
+        border-radius: 0px;
+        padding-left: 0.7rem;
+        width: 15rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+    
+    .form input:focus {
+        outline: none;
+    }
+    
+    .form p {
+        margin-left: 3.5rem;
+    }
+    
+    .form h2 {
+        margin-bottom: -0.3rem;
+        margin-left: 5.2rem;
+        width: 5rem ;
+      
+    }
+    
+    .actions {
+        width: 5rem ;
+        margin-top: 1rem;
+        margin-left: 5.2rem;
+    }
+}
